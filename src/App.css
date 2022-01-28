@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box!important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cursor{
+  width:15px;
+  position:absolute;
+  height:15px;
+  border-radius:50%;
+  background-color:rgb(255, 255, 255);
+  transform:translate(0px,0px);
+  mix-blend-mode:difference;
+  transition:0.1s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.st1{
+  opacity:0;
+  transition:0.5s;
+}
+.st2{
+  opacity:0;
+  transition:0.5s;
+}
+.st3{
+  opacity:0;
+  transition:0.5s;
+}
+h2:hover .spantext{
+  opacity:1;
+}
+h2:hover .cursor{
+  height:50px!important;
+  width:50px!important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.screen{
+height:100vh;
+
+  background-color:#e5e5e5;
+  position:relative;
 }
 
-.App-link {
-  color: #61dafb;
+.overlay{
+  position:absolute;
+  bottom:0;
+  left:0;
+  overflow:hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Overscreen{
+  height:100vh;
+  width:100%;
 }
+.screentext h1{
+  font-size:150px;
+}
+.screentext img{
+  width:250px;
+}
+
+/* ..Menubox........................... */
+
+.menubox{
+  height:90vh;
+  width:100%;
+}
+
+.linkt{
+  text-decoration: none;
+  color:#000;
+}
+
+.linkt:hover{
+  color:#000;
+}
+
+.menuname{
+  writing-mode: vertical-lr;
+   font-size:150px;}
